@@ -1,0 +1,57 @@
+ <style>
+
+     input[type="text"]{
+          margin-left: auto;
+          margin-right: auto;
+          display: block;
+          padding:10px;
+         width:85%;
+          margin-left:40px
+     }
+
+     input[type="submit"]{
+          margin-left: auto;
+          margin-right: auto;
+          display: block;
+          padding:10px;
+          width:85%;
+          margin-left:40px
+     }
+
+
+     .center{
+          margin: auto;
+          width: 50%;
+          border: 1px solid gray;
+          padding: 10px;
+     }
+
+     .form{
+          margin: auto;
+          display: block;
+          padding: 10px;
+     }
+
+ </style>
+
+    <div class="row">
+       
+
+
+
+        <div class="col">
+            <div>
+                Counter: {{ countdown}}
+            </div>
+
+            <div class="center">
+
+                    <form class="form" name="searchUser" ng-submit="search(username)">
+                        <label style="margin-left:40px"> Search Profiles:</label>
+                        <input type="text"  class="form-group" required placeholder="Username to find" ng-model="username" />
+                        <input class="btn btn-outline-primary" type="submit" value="Search" />
+
+                    </form>
+             </div>
+        </div>
+    </div>
